@@ -1,38 +1,100 @@
+body {
+  background: url(food.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #2e485d;
+}
+
+.button-add {
+  font-family: "Montserrat", sans-serif;
+  background-color: #77cf40;
+  padding: 20 px;
+  border-radius: 20px;
+  border: none;
+  font-size: 17px;
+}
+
+.button-delete {
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  border: 0;
+  font-size: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  background-color: #dcedf7;
+  border-radius: 20px;
+  padding: 15px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.whole-plan {
+  width: 70%;
+  height: 100wh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.myInput {
+  width: 70%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: block;
+}
+
+textarea {
+  display: block;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  width: 70%;
+  height: 200px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.selected {
+  background-color: #fad106;
+}
+
+.default {
+  background-color: #dcedf7;
+}
+
+p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.field {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 780px) {
+  .pi, h1 {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 13px;
+  }
+
+  .pi { 
+    font-size: 10px;
+  }
+
+  .field {
+    font-size: 8px;
   }
 }
