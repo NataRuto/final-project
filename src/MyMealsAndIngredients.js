@@ -11,7 +11,7 @@ function MyMealsAndIngredients({selectedDay, updateDay}) {
     return(
         <div className="whole-plan">
             <input
-            type="text"
+            type="text" 
             className="myInput"
             placeholder="Today is..."
             id="title"
